@@ -6,8 +6,8 @@
       Chapter 1
       Hands-on Project 1-3
 
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   June 10, 2024
 
       Filename: project01-03.html
    -->
@@ -156,9 +156,11 @@
           </fieldset>
         </fieldset>
         <fieldset id="submitbutton">
-          <input type="submit" value="Submit" />
+          <input type="submit" onclick="document.getElementById('submitMsg').innerHTML = 'Thank you for your order';" value="Submit"/>
         </fieldset>
-     </form>
-   </article>
+        <div id="submitMsg"></div>
+    </form>
+
+  </article>
 </body>
 </html>
