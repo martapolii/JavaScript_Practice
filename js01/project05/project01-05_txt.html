@@ -6,8 +6,8 @@
       Chapter 1
       Hands-on Project 1-5
 
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   June 14, 2024
 
       Filename: project01-05.html
    -->
@@ -15,8 +15,14 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-5</title>
    <link rel="stylesheet" href="styles.css" />
-   <script>
+   <!-- #2 need to fix 2 errors in the following code: -->
+   <!-- <script>
       Let reopenDate = "September 8th;
+      error 1: capitalization in "let"
+      error 2: missing closing double quotes
+   </script> -->
+   <script>
+      let reopenDate = "September 8th";
    </script>
 </head>
 
@@ -29,8 +35,14 @@
 
    <article>
       <script>
-         /* Create a custom reopening message //
-         Document.write["<p>We are closed for the holiday and will reopen on " + reopendate + "</p>"];
+         // 4 errors below:
+         // Create a custom reopening message 
+        /*  Document.write["<p>We are closed for the holiday and will reopen on " + reopendate + "</p>"]; */
+        //error 1: capitalized object
+        //error 2: square brackets instead of parentheses
+        //error 3: variable "reopendate" not capitalized properly (camelCasing like when declared)
+        //error 4: No period? inproper value for the variable? (is midnight tonight in the example)
+         document.write("<p>We are closed for the holiday and will reopen on " + reopenDate + ".</p>");
       </script>
    </article>
 </body>
