@@ -6,8 +6,8 @@
       Chapter 2
       Hands-on Project 2-1
 
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   June 14, 2024
 
       Filename: index.htm
    -->
@@ -15,6 +15,8 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 2-1</title>
    <link rel="stylesheet" href="styles.css" />
+   <!-- #2. linked external js file and defered loading the script until all html is loaded -->
+   <script src="project02-01_txt.js" defer></script>
 </head>
 
 <body>
@@ -27,17 +29,28 @@
       <form>
          <div>
             <h3>Temp in &#176; F</h3>
-            <input type="number" id="fValue" value="32" />
+            <!-- #6 insert an anonymous function in onchnage event handler -->
+            <input type="number" id="fValue" value="32" onchange = "
+            (function ()
+            {
+               fDegree = document.getElementById('fValue').value;
+               document.getElementById('cValue').value = FarenheitToCelcius(fDegree);
+            })();" />
+            <!-- ** need the last pair of empty () bc without it the function is initialized but not invoked; the () causes the JavaScript engine to invoke the function right after intilializing it. without these the output of the function does not appear on the page.-->
          </div>
          <div id="arrow">&harr;</div>
          <div>
             <h3>Temp in &#176; C</h3>
-            <input type="number" id="cValue" value="0" />            
+            <!-- #5 insert an anonymous function -->
+            <input type="number" id="cValue" value="0" 
+            onchange="(function ()
+            {cDegree = document.getElementById('cValue').value;
+               document.getElementById('fValue').value = CelciusToFarenheit(cDegree);})();" />            
          </div>
-     </form>
-     <footer>
-        Enter a Fahrenheit or Celsius temperature in either input box and press Tab to convert.
-     </footer>
+      </form>
+   <footer>
+      Enter a Fahrenheit or Celsius temperature in either input box and press Tab to convert.
+   </footer>
    </article>
 </body>
 </html>
