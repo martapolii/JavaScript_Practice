@@ -6,16 +6,20 @@
       Chapter 1
       Hands-on Project 1-4
 
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   June 14, 2024
 
       Filename: index.htm
    -->
-   <meta charset="utf-8" />
+   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-4</title>
-   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="styles.css">
+   <!-- #4 inserted a script tag to link the js file-->
+<script src="project01-04_txt.js"></script>
 </head>
+
+
 
 <body>
    <header>
@@ -32,35 +36,47 @@
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
                <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <!-- #5 -->
+               <script>
+                  document.write(homeStreet + "<br>");
+                  document.write(homeCity + ", " + homeState + " " + homeCode);
+               </script>
+               <!-- #7 insert event handler with 4 commands assigning values of elements with specific id's to variables-->
+               <input type="radio" id="homeoption" name="shippingaddr" onclick="document.getElementById('street').value = homeStreet, document.getElementById('city').value = homeCity, document.getElementbyId('state').value = homeState, document.getElementById('code').value = homeCode">
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <script>
+                  document.write(workStreet + "<br>");
+                  document.write(workCity + ", " + workState + " " + workCode);
+               </script>
+               <!-- 6 -->
+               
+               <!-- 8 -->
+               <input type="radio" id="workoption" name="shippingaddr" onclick ="document.getElementById('street').value = workStreet,document.getElementById('city').value = workCity, document.getElementById('state').value = workState, document.getElementById('code').value = workCode">
             </label>
          </fieldset>
          
          
-          <fieldset id="contactinfo">
+         <fieldset id="contactinfo">
             <label for="street">
-              Street Address
-              <input type="text" id="street" />
+               Street Address
+               <input type="text" id="street">
             </label>
             <label for="city">
-              City
-              <input type="text" id="city" />
+               City
+               <input type="text" id="city">
             </label>
             <label for="state">
-              State
-              <input type="text" id="state" />
+               State
+               <input type="text" id="state">
             </label>
             <label for="code">
-              Zip
-              <input type="text" id="code" />
+               Zip
+               <input type="text" id="code">
             </label>
-          </fieldset>
-          
-     </form>
+         </fieldset>
+   </form>
    </article>
 </body>
 </html>
