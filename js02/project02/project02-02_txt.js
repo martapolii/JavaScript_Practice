@@ -19,4 +19,5 @@ let phone = document.getElementById('phone').value;
 name && email && phone != "" ? window.alert("Thank you!"): window.alert("Please fill in all fields");
 }   // if all 3 variables are not equal to an empty string, then trur (form is filled out), if any of them are an empty string then condition is not fulfilled, = false and form is not filed out fully
 
-document.getElementById('submit').onclick = verifyForm;
+//document.getElementById('submit').onclick = verifyForm;
+document.getElementById('submit').addEventListener('click', verifyForm);
