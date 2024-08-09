@@ -3,14 +3,17 @@
       Project 02-05
 
       Application to create an online calculator
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   August 9, 2024  
 
       Filename: project02-05.js
  */
  
 // Add event handlers for each calculator button sending that buttons value to the runCalculator() function
-document.getElementById("button0").click = function() {
+// *** there are 4 syntax errors in the code below. Find and correct them. ***
+
+//1. was "click" instead of "onclick"
+document.getElementById("button0").onclick = function() {
    runCalculator(0);
 }
 
@@ -55,14 +58,14 @@ document.getElementById("buttonAdd").onclick = function() {
 }
 
 document.getElementById("buttonMinus").onclick = function() {
-   runcalculator("-");
+   runCalculator("-"); // 2.Calcuator was lowercase
 }
 
 document.getElementById("buttonMultiply").onclick = function() {
    runCalculator("*");
 }
-
-document.getElementById("buttonDivide").onclick = function {
+//3.missing brackets after function
+document.getElementById("buttonDivide").onclick = function() {
    runCalculator("/");
 }
 
@@ -76,36 +79,39 @@ document.getElementById("buttonEnter").onclick = function() {
 }
 
 // Clear the calculator window if the C key is clicked
-document.getElementById("buttonClear").onclick = clearCalculator();
-
+//document.getElementById("buttonClear").onclick = clearCalculator();
+//4. the onlick property should have a function assigned to it, not the function name itself
+document.getElementById("buttonClear").onclick = function() {
+   clearCalculator();
+}
 
 
 
 // Function to enter characters into the calculator window based on what is clicked
+
+//*** 2 syntax errors below */
 
 function runCalculator(character) {
    // Retrieve the characters in the calculator window
    let calcValue = document.getElementById("calcWindow").value;
    
    // Add the character to the calculator string or if its empty (the enter key) evaluate the equation
-   (character) ??? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
-   
+   //1. tertiary operator incorrectly used
+   //(character) ??? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
+   calcValue += character ? character : " = " + evalEq(calcValue) + "\n";
    // Update the characters displayed in the calculator window.
-   document.getElementById("calcWindow").value = calc_value;
+   document.getElementById("calcWindow").value = calcValue; //2.fixed from calc_value
 }
 
 
 
 
 // Function to clear the calculator window
+// *** 1 suntax error below ***
 
 function clearCalculator() {
-      document.getElementById("calcwindow").value ="";
+      document.getElementById("calcWindow").value =""; //fixed from calcwindow
 }
-
-
-
-
 
 
 /* ===================================================================== */
