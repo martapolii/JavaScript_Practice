@@ -4,10 +4,12 @@
 
       Tipton Turbines
       Baseball Schedule Data
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   Aug 25, 2024
 
       Filename: schedule.js
+
+      // this file contains arrays with information on the 23 games
 */
 
 // date of games played
