@@ -3,8 +3,8 @@
       Project 03-02
 
       Application to generate a slide gallery
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   Sept 3, 2024 
 
       Filename: project03-02.js
 */
@@ -24,5 +24,18 @@ captions[10]="Maneuvering in space with the Canadarm2 [2006]";
 captions[11]="The International Space Station second expansion [2006]";
 captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
+
+//declare an html code variable and set initial value to 0
+let htmlCode = "";
+
+// create a for loop that adds the text below to the value of tht htmlCode variable with each iteration:
+for (let i = 0; i < captions.length; i++){
+      htmlCode += `<figure> <img alt='' src='slide${[i]}.jpg' /> <figcaption>${captions[i]}</figcaption></figure>`;
+}     //can use back ticks + interpolation instead of string concatenation
+
+// change the innerHTML of the element by the id "gallery" to the value of the htmlCode variable 
+document.getElementById("gallery").innerHTML = htmlCode;
+
+
 
 
