@@ -1,10 +1,12 @@
+// This program adheres to a strict interpretation of JavaScript syntax 
+
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-01
 
       Application to calculate total moving cost
-      Author: 
-      Date:   
+      Author: Marta Polishchuk
+      Date:   September 22, 2024 
 
       Filename: project04-01.js
 */
