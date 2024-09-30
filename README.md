@@ -15,4 +15,10 @@ Key Concepts Covered:
   
 This repository showcases my practical work in building interactive and user-friendly client-side web applications using JavaScript and its related libraries and techniques.
 
+Live links to projects:
+- Assignment 1: Dynamic Calculator - https://studentweb.cencol.ca/mpolish3/COMP125/assignment1/assignment1.html
+- Assignment 2: Slideshow, Lightbox, Overlay - https://studentweb.cencol.ca/mpolish3/COMP125/assignment2/
+- Assignment 3: Bug Smasher Game - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment3/
+- Assignment 4: AJAX and API's - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment4/
+
 All "HOP" exercises are from the 7th edition of the book "Java Script for Web Warriors."
