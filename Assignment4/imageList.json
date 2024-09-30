@@ -1,0 +1,38 @@
+[
+    {
+        "src": "img1.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img2.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img3.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img4.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img5.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img6.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img7.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img8.jpg",
+        "duration": 5000
+    },
+    {
+        "src": "img9.jpg",
+        "duration": 5000
+    }
+]

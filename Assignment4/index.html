@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <title>COMP122 Assignment 4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>C125 ASSIGNMENT 4: AJAX AND APIs  </h1>
+      </header>
+
+      <main>
+        <!-- Slideshow container -->
+        <div class ="slideshow_container">
+          <h2>AJAX Slideshow</h2>
+            <div class="button_previous"><img src="angle-left.png" class="arrow_previous"></div>
+            <div class="button_next"><img src="angle-left.png" class="arrow_next"></div>
+            <div id="image_container" class="image_container"></div>
+            <div>
+              <button class="update_button" id="update_button1">Update</button>
+            </div>  
+        </div>
+        <!-- Cat Facts API -->
+        <div class ="API_container">
+          <h2>Cat Facts API</h2>
+            <div id="cat_facts"></div>
+            <div>
+              <button class="update_button" id="update_button2">New Cat Fact(s)</button>
+            </div>
+        </div>
+        <!-- Jokes API -->
+        <div class ="API_container">
+          <h2>3 Random jokes API</h2>
+            <div id="jokes"></div>
+            <button class="update_button" id="update_button3">New Jokes</button>
+        </div>
+        <!-- Weather API -->
+        <div class ="API_container">
+          <h2>Current Weather API</h2>
+          <input type="text" id="search_box" placeholder="Search weather by location...." style="width: 300px;">
+            <button class="update_button" id="update_button4">Get Weather</button>
+            <div id="weather"></div>
+            
+        </div>
+      </main>
+
+      <footer>
+        <p>Copyright &copy; Marta Polishchuk. Student Number: 301432299. COMP125: Client-Side Web Development, Summer 2024</p>
+      </footer>
+
+    </div>
+    <script src="script.js"></script> <!-- have to load script here or else java script loads first and I get Uncaught errors becuase the java script can't access the html elements it needs -->
+  </body>
+</html> 
