@@ -1,0 +1,51 @@
+<!-- 
+    Marta Polishchuk
+    301432299
+    COMP125 SEC 402
+    Assignment 2
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>COMP125 Assignment 2</title>
+    <meta charset ="utf-8">
+    <!-- links to three seperate style sheets (the general page and the lighbox + + favourites bar)-->
+    <link rel="stylesheet" href="stylesheet_page.css">
+    <link rel="stylesheet" href="stylesheet_lightbox.css">
+    <link rel="stylesheet" href="stylesheet_favbar.css">
+    <!-- links to three external java script files, one for lightbox data (images and captions), one for lightbox, and one for favourites bar functionality-->
+    <script src="images_captions.js" defer></script> <!-- deffered so html loads first-->
+    <script src="lightbox.js" defer></script>
+    <script src="favouritesbar.js" defer></script>
+    <!-- link to favicon image-->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        PolishchukArt
+      </h1>
+    </header>
+    <main>
+      <article>
+          <!-- Added an element to contain the lightbox:-->
+          <div id="lightbox"></div>
+          <!-- Added an element to containt the favourites bar:-->
+          <div id="favbar"></div>
+              <p>To view each painting:</p>
+              <ul>
+                <li>Click the play/pause button to start an automatic slideshow.</li>
+                <li>Click the right/left arrow buttons to manually scroll through the paintings.</li>
+                <li>Click on a painting to enlarge it.</li>
+                <li>Add up to 5 paintings to your favourites bar!</li>
+                <li>Remove a painting from the favourites bar by clicking on it.</li>
+              </ul>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright &copy; Marta Polishchuk. Student Number: 301432299. COMP125 - Client-Side Web Development, Summer 2024</p>
+    </footer>
+  </body>
+</html>
