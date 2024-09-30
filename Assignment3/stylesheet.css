@@ -1,0 +1,75 @@
+
+html,body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: rgba(255, 228, 196, 0.596);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(124, 1, 83);
+  color: rgb(229, 182, 248);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+margin:0;
+font-size: 12vw; /* use VW to have responsive font sizes */
+}
+
+main{
+flex-grow: 1; /* this + making sure bodies min-height is set to 100vh ensures footer is glued to bottom!!! */
+
+}
+
+.buttons{
+  padding: 20px;
+}
+
+button{
+  padding: 10px;
+  margin: 20px;
+}
+
+canvas{
+  border: 10px solid rgb(124, 1, 83);
+  margin-top: 10px;
+  max-width: 90vw;
+}
+
+#score {
+  font-size: 20px;
+  color: rgb(124, 1, 83);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#speed{
+  font-size: 20px;
+  color: rgb(124, 1, 83);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+  padding-bottom: 10px;
+  color: rgb(82, 82, 82);
+}
