@@ -1,0 +1,46 @@
+<!--
+Marta Polishchuk
+301432299
+COMP125 SEC 402
+Assignment 1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>COMP125 Assignment1</title>
+  <link href="assignment1.css" rel="stylesheet" type="text/css">
+  <link href="calculator-simple.png" rel="icon" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>dynamic multiplication table</h1>
+  </header>
+  <main>
+    <h2>Need to generate a multiplication table?</h2>
+    <h3>You've come to the right place.</h3>
+    <h4>Click <span style="color:blue">Draw Table</span> to get started:</h4>
+      <div class="table-builder">
+        <label for="rows">Rows:</label>
+          <input type="number" name="rows" id="rows" min="1" max="30" value="10">
+          <label for="columns">Columns:</label>
+          <input type="number" name="columns" id="columns" min="1" max="30" value="10">
+          <br>
+          <button id="click-here">Draw Table</button>
+          <div id="table"></div>
+      </div>
+  </main>
+  <footer>
+    <p>Copyright &copy; Marta Polishchuk. Student Number: 301432299. COMP125 - Client-Side Web Development, Summer 2024</p>
+  </footer>
+  <!-- script element inserted to link .js file-->
+  <script src="assignment1.js"></script>
+</body>
+</html>
+
+<!--
+Sources:
+- favicon: https://www.flaticon.com/free-icon-font/calculator-simple_10490033?page=1&position=59&term=math&origin=search&related_id=10490033
+- header image: https://unsplash.com/photos/black-remote-control-on-yellow-surface-ihqB-c8C7Bc
+-->
