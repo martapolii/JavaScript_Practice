@@ -1,6 +1,6 @@
-#COMP125 - Client-Side Web Development
+#JavaScipt_Practice
 
-This repository contains the hands-on exercises and assignments from the Client-Side Web Development (COMP125) course at Centennial College. This course dives deep into core JavaScript concepts and advanced features to create dynamic and interactive web applications.
+This repository contains hands-on exercises from from the 7th edition of the book "Java Script for Web Warriors as well as additional projects. 
 
 Key Concepts Covered:
 - JavaScript Fundamentals: Learning the syntax, functions, data types, and operators essential for JavaScript development.
@@ -16,9 +16,9 @@ Key Concepts Covered:
 This repository showcases my practical work in building interactive and user-friendly client-side web applications using JavaScript and its related libraries and techniques.
 
 Live links to projects:
-- Assignment 1: Dynamic Calculator - https://studentweb.cencol.ca/mpolish3/COMP125/assignment1/assignment1.html
-- Assignment 2: Slideshow, Lightbox, Overlay - https://studentweb.cencol.ca/mpolish3/COMP125/assignment2/
-- Assignment 3: Bug Smasher Game - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment3/
-- Assignment 4: AJAX and API's - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment4/
+- Dynamic Calculator - https://studentweb.cencol.ca/mpolish3/COMP125/assignment1/assignment1.html
+- Slideshow, Lightbox, Overlay - https://studentweb.cencol.ca/mpolish3/COMP125/assignment2/
+- Bug Smasher Game - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment3/
+- AJAX and API's - https://studentweb.cencol.ca/mpolish3/COMP125/Assignment4/
 
-All "HOP" exercises are from the 7th edition of the book "Java Script for Web Warriors."
+
